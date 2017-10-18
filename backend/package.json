@@ -1,0 +1,19 @@
+{
+  "name": "resttrafficapp",
+  "version": "1.0.0",
+  "description": "NodeJS app for traffic signs",
+  "main": "server.js",
+  "dependencies": {
+    "hapi": "^16.6.2",
+    "hapi-cors": "^1.0.1",
+    "joi": "^13.0.0",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Aditi Helekar",
+  "license": "ISC"
+}
