@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feed Traffic Signs Data</title>
+</head>
+<style>
+	#container{
+    	text-align: center;
+	}
+	#latitude{
+	    width: 200px;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    box-sizing: border-box;
+	    border-radius: 5px;
+	}
+	#longitude{
+	    width: 200px;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    box-sizing: border-box;
+	    border-radius: 5px;
+	}
+	#sendButton{
+		width: 100px;
+	    padding: 12px 20px;
+	    box-sizing: border-box;
+	    border-radius: 10px;
+	    font-size: 20px;
+    	font-weight: bold;
+	}
+	#sendButton:hover {
+    	background-color: #111111;
+    	color: white;
+	}
+	#pagetitle{
+	    color: black;
+	    font-family: "Verdana" ;
+	    font-size: 30px;
+	    text-align: center;
+	    margin-top: 50px;
+	    font-weight: bold;
+	}
+	
+	#dropdown{
+		width: 200px;
+		height: 50px;
+	}
+	
+	#latlon{
+		align-content: center;
+		align-items: center;
+		align-self: center;
+		text-align: center;
+		margin-top: 100px;
+	}
+	#dropdowncol{
+		text-align: center;	
+		align-content: center;
+		align-items: center;
+		align-self: center;
+		margin-top: 50px;
+		font-family: "Verdana";
+	}
+	#buttonContainer{
+		text-align: center;	
+		margin-left: 80px;
+		margin-top: 50px;
+	}
+
+
+</style>
+<body background="https://i.pinimg.com/originals/64/ac/2b/64ac2b4e696f1fb6f659f50da9fe3caa.jpg">
+	<header id="pagetitle">Enter traffic sign details:</header>
+	<div id="latlon" class="col">
+		<form action="/action_page.php" name="myForm">
+			Latitude: <br> 
+			<input id="latitude" type="text" name="Latitude" value=""><br>
+			Longitude: <br>
+			<input id="longitude" type="text" name="Longitude" value=""><br>
+		</form>
+		
+	</div>
+	<div id="dropdowncol">
+		<select id="selectSignToAdd">
+			<option value="" disabled="disabled" selected="selected">Please select a Traffic Sign</option>
+			<option id="stopSign" value="Stop Sign">Stop Sign</option>
+			<option id="speed55" value="Speed Limit 55">Speed Limit 55</option>
+			<option id="oneway" value="One Way">One Way</option>
+			<option id="speed25" value="Speed Limit 25">Speed Limit 25</option>
+			<option id="yield" value="Yield">Yield</option>
+			<option id="donotenter" value="Do not Enter">Do not Enter</option>
+			<option id="schoolahead" value="School Ahead">School Ahead</option>
+			<option id="nostraightthrough" value="No Straight Through">No Straight Through</option>
+			<option id="norightturn" value="No Right Turn">No Right Turn</option>
+			<option id="noleftturn" value="No Left Turn">No Left Turn</option>
+			<option id="nouturn" value="No U Turn">No U Turn</option>
+			<option id="straightaheadonly" value="Straight Ahead Only">Straight Ahead Only</option>
+			<option id="donotpass" value="Do not Pass">Do not Pass</option>
+			<option id="keepright" value="Keep Right">Keep Right</option>
+			<option id="wrongway" value="Wrong Way">Wrong Way</option>
+			<option id="noparking" value="No Parking">No Parking</option>
+		</select>
+	</div>
+	<div id="buttonContainer">
+		<button id="sendButton" style='margin-right:80px'>Send</button>
+	</div>
+  	
+  	<script src="js/main.js" async></script>
+</body>
+</html>

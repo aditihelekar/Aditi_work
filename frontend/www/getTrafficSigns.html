@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Traffic Sign</title>
+</head>
+<style>
+    #container{
+        text-align: center;
+    }
+    #latitudeGet{
+        width: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    #longitudeGet{
+        width: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    #distanceGet{
+        width: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    #getButton{
+        width: 100px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #getButton:hover {
+        background-color: #111111;
+        color: white;
+    }
+    #pagetitle{
+        color: black;
+        font-family: "Verdana" ;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+    
+    #dropdown{
+        width: 200px;
+        height: 50px;
+    }
+    
+    #latlon{
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #dropdowncol{
+        text-align: center; 
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        margin-top: 50px;
+        font-family: "Verdana";
+    }
+    #bContainer{
+        text-align: center; 
+        margin-left: 80px;
+        margin-top: 25px;
+    }
+    #trafficSignDisplay{
+        text-align: center; 
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Verdana";
+    }
+    #signImg{
+        text-align: center; 
+        margin-top: 25px;
+    }
+
+
+</style>
+<body background="https://i.pinimg.com/originals/64/ac/2b/64ac2b4e696f1fb6f659f50da9fe3caa.jpg">
+    <header id="pagetitle">Get Traffic Sign for my location:</header>
+    <div id="latlon" class="col">
+        <form action="/action_page.php" name="myForm">
+            Latitude: <br> 
+            <input id="latitudeGet" type="text" name="Latitude" value=""><br>
+            Longitude: <br>
+            <input id="longitudeGet" type="text" name="Longitude" value=""><br>
+            Distance in miles: <br>
+            <input id="distanceGet" type="text" name="Distance" value=""><br>
+        </form>
+        
+    </div>
+    
+    <div id="bContainer">
+        <button id="getButton" style='margin-right:80px'>Get</button>
+    </div>
+    <p id="trafficSignDisplay"></p>
+    <div id="signImg">
+        <!-- <img src="http://thumbs4.ebaystatic.com/d/l225/m/mYRxAGmvMSzGPKP70PYFQCw.jpg"> -->
+    </div>
+    <script src="js/getData.js" async></script>
+</body>
+</html>
